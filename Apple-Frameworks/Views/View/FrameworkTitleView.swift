@@ -24,7 +24,8 @@ struct FrameworkTitleView: View {
 //            Text(name)
             Text(framework.name)
                 .font(.title2) //title2 -> esto respeta la configuracion q tenga el user en su telefono
-                .fontWeight(.bold)
+                .fontWeight(.semibold)
+                .foregroundStyle(Color(.label))
                 .scaledToFit() // ability to shrink
                 .minimumScaleFactor(0.5) // smallest that it will go -> 50%
         }

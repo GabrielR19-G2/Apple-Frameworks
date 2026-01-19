@@ -15,13 +15,14 @@ import Combine
 
 final class FrameworkGridViewModel: ObservableObject{
     // optional (1st we dont have a framework selected
-    var selectedFramework: Framework?{
-        didSet{
-            isShowingDetailView = true
-//            cuando se selecciona un framework, isShowingDetailView va a cambiar y por ende cambia the source of truth   
-        }
-    }
-    @Published var isShowingDetailView = false
+//    ya no se usa
+//    var selectedFramework: Framework?{
+//        didSet{
+//            isShowingDetailView = true
+////            cuando se selecciona un framework, isShowingDetailView va a cambiar y por ende cambia the source of truth   
+//        }
+//    }
+//    @Published var isShowingDetailView = false
     let columns: [GridItem]=[GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())] 
     
 //    init(selectedFramework: Framework? = nil, isShowingDetailView: Bool = false) {

@@ -9,14 +9,14 @@ import SwiftUI
 
 struct FrameworkDetailView: View {
     var framework: Framework
-    @Binding var isShowingDetailView: Bool
+//    @Binding var isShowingDetailView: Bool
     //    private -> only 1 screen
     @State private var isShowingSafariView = false
     
     var body: some View {
         VStack{
-            XDismissButton(isShowingDetailView: $isShowingDetailView)
-            Spacer()
+//            XDismissButton(isShowingDetailView: $isShowingDetailView)
+//            Spacer()
             FrameworkTitleView(framework: framework)
             Text(framework.description)
                 .font(.body)
@@ -46,6 +46,8 @@ struct FrameworkDetailView: View {
 }
 
 #Preview {
-    FrameworkDetailView(framework: MockData.sampleFramework, isShowingDetailView: .constant(false))
+    FrameworkDetailView(framework: MockData.sampleFramework,
+                        // isShowingDetailView: .constant(false)
+    )
         .preferredColorScheme(.dark)
 }
